@@ -1,0 +1,65 @@
+.testimonial {
+	margin-bottom: 120px;
+	h2 {
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.flex {
+		gap: 70px;
+		@media (max-width: 1174px) {
+			gap: 30px;
+		}
+	}
+	.col {
+		flex: 1 1 20%;
+		padding: 40px 50px;
+		min-height: 330px;
+		box-sizing: border-box;
+		&:nth-child(1) {
+			background: url('../../images/Zz_Plant\ 1.png');
+			background-color: #F8F8F8;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-position-x: right;
+		}
+		&:nth-child(2) {
+			background: url('../../images/Snake_Plant\ 1.png');
+			background-color: #F8F8F8;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-position-x: right;
+		}
+		&:nth-child(3) {
+			background: url('../../images/Bamboo.png');
+			background-color: #F8F8F8;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-position-x: right;
+		}
+		@media (max-width: 1025px) {
+			flex: 1 1 33%;
+		}
+		@media (max-width: 650px) {
+			flex-basis: 100%;
+		}
+		p {
+			font-size: 16px;
+			line-height: 150%;
+			color: #121212;
+			opacity: 0.8;
+			max-width: 243px;
+		}
+	}
+	.inline {
+		display: flex;
+		align-items: center;
+		margin-bottom: 40px;
+		h4 {
+			font-weight: 900;
+			font-size: 20px;
+			line-height: 140%;
+			color: #285A43;
+			margin-left: 20px;
+		}
+	}
+}

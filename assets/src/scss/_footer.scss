@@ -1,0 +1,82 @@
+.nkp-footer {
+    padding: 80px 0 40px;
+    background-color: $color-purple;
+    a {
+        text-decoration: none;
+    }
+    @include media-breakpoint(max-576) {
+        padding: 40px 0;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include media-breakpoint(max-576) {
+            text-align: center;
+            flex-direction: column-reverse;
+        }
+    }
+    .nkp-footer__logo {
+        font-weight: 900;
+        display: block;
+        font-size: 32px;
+        color: $color-white;
+        margin-bottom: 32px;
+    }
+    .nkp-footer__social {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        a {
+            display: flex;
+            align-items: center;
+            color: $color-white;
+            &:hover {
+                p, svg {
+                    transition: ease-in-out .3s color;
+                    color: $color-blue;
+                }
+            }
+        }
+        .email p {
+            margin-left: 10px;
+        }
+        @include media-breakpoint(max-576) {
+            justify-content: center;
+        }
+    }
+    .nkp-footer__left {
+        width: 50%;
+        @include media-breakpoint(max-576) {
+            width: 100%;
+        }
+    }
+    .nkp-footer__right {
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        .btn {
+            height: fit-content;
+            cursor: pointer;
+        }
+        @include media-breakpoint(max-576) {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+    }
+    .nkp-footer__line {
+        margin-top: 72px;
+        opacity: .5;
+        p {
+            color: $color-white;
+        }
+        a {
+            text-decoration: underline;
+            transition: ease-in-out .3s color;
+            &:hover {
+                color: $color-orange;
+            }
+        }
+    }
+}

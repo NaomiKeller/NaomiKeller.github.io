@@ -1,0 +1,14 @@
+.container {
+	max-width: 1230px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-2 {
+	flex-basis: 40%;
+}

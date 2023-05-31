@@ -1,0 +1,62 @@
+.nkp-skillset {
+    margin: 120px 0;
+    @include media-breakpoint(max-767) {
+        margin: 64px 0;
+    }
+    h2 {
+        margin-bottom: 24px;
+    }
+    h3 {
+        margin: 24px 0 12px;
+    }
+    p {
+        color: $color-light-grey;
+    }
+    img {
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+        display: block;
+        filter: invert(20%) sepia(87%) saturate(5748%) hue-rotate(255deg) brightness(87%) contrast(108%);
+    }
+    .nkp-skillset__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px;
+        .nkp-skillset__head {
+            width: calc(33.3333% - 36px);
+            top: 100px;
+            position: sticky;
+            height: fit-content;
+            p {
+                max-width: 370px;
+            }
+            @include media-breakpoint(max-767) {
+                width: 100%;
+                position: static;
+                p {
+                    max-width: 100%;
+                }
+            }
+        }
+        .nkp-skillset__grid {
+            width: calc(66.6666% - 36px);
+            display: flex;
+            gap: 48px 72px;
+            flex-wrap: wrap;
+            @include media-breakpoint(max-767) {
+                width: 100%;
+            }
+        }
+        .nkp-skillset__grid-item {
+            width: calc(50% - 36px);
+            @include media-breakpoint(max-991) {
+                width: 100%;
+            }
+            .image-wrap {
+                display: flex;
+                gap: 7px;
+            }
+        }
+    }
+}

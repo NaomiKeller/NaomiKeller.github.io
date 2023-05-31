@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$weight-black: 900;
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+@mixin anchor {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 200%;
+	color: $accent;
+	text-decoration: none;
+	cursor: pointer;
+	transition: ease-in-out .3s;
+	&:hover {
+		color: $accent-active;
+	}
+	@media (max-width: 1000px) {
+		font-size: 15px;
+	}
+	@media (max-width: 575px) {
+		font-size: 12px;
+	}
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 72px;
+	color: $font-main;
+	margin-top: 80px;
+	@media (max-width: 1000px) {
+		font-size: 30px;
+	}
+	@media (max-width: 575px) {
+		font-size: 18px;
+		line-height: 200%;
+	}
+}
+
+h4 {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 36px;
+	color: #564E4E;
+	@media (max-width: 575px) {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 200%;
+	}
+}
+
+p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 200%;
+	color: #564E4E;
+	@media (max-width: 1000px) {
+		font-size: 15px;
+	}
+	@media (max-width: 575px) {
+		font-size: 12px;
+	}
+}

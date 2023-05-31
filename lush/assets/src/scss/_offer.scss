@@ -1,0 +1,89 @@
+.offer {
+	margin-top: 120px;
+	h2 {
+		text-align: center;
+		margin: 0 0 35px 0;
+	}
+	.flex {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		@include media-breakpoint(max-1024) {
+			justify-content: center;
+		}
+		.flex-item {
+			flex-basis: 23%;
+			border: 1px solid rgba(0, 0, 0, 0.03);
+			border-radius: 10px;
+			box-sizing: border-box;
+			img {
+				width: 100%
+			}
+			@include media-breakpoint(max-1199) {
+				flex-basis: 31.2%;
+			}
+			@include media-breakpoint(max-1024) {
+				flex-basis: 47%;
+			}
+			@media (max-width: 615px) {
+				flex-basis: 100%;
+			}
+			.btn-green {
+				max-width: fit-content;
+				font-size: 13px;
+				font-weight: 900;
+				padding: 8px 24px;
+				right: 23px;
+				bottom: 13px;
+				float: right;
+			}
+			h4 {
+				font-weight: 900;
+				font-size: 16px;
+				line-height: 140%;
+				text-transform: capitalize;
+				color: #337A5B;
+				margin-bottom: 5px;
+			}
+			span.price-discount {
+				font-weight: 700;
+				font-size: 12px;
+				line-height: 140%;
+				color: #337A5B;
+			}
+			span.price-original {
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 140%;
+				text-decoration-line: line-through;
+				color: #121212;
+				opacity: 0.5;
+			}
+		}
+		.flex-item-content {
+			padding: 10px 0 10px 24px;
+			position: relative;
+			.btn-green {
+				position: absolute;
+				right: 23px;
+			}
+		}
+		.flex-img-wrap {
+			position: relative;
+			.like-icon {
+				cursor: pointer;
+				background: url('../../images/like.png');
+				height: 32px;
+				width: 32px;
+				border: none;
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				transition: ease-in-out .3s;
+				&:hover {
+					background: url('../../images/like-active.png')
+				}
+			}
+		}
+	}
+}

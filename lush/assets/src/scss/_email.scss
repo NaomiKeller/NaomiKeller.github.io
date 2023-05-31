@@ -1,0 +1,80 @@
+.email {
+	background: url('../../images/email-background.png');
+	background-size: cover;
+	padding: 124px 0; 
+	box-sizing: border-box;
+	margin-bottom: 120px;
+	h2 {
+		color: white;
+		@include media-breakpoint(max-1024) {
+			text-align: center;
+			margin-bottom: 60px;
+		}
+	}
+	.flex {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.col {
+		flex-basis: 58%;
+		&:first-child {
+			flex-basis: 42%;
+			@include media-breakpoint(max-1024) {
+				flex-basis: 100%;
+			}
+		}
+		@include media-breakpoint(max-1024) {
+			flex-basis: 100%;
+		}
+	}
+	.btn .btn-green {
+		background: #337A5B;
+		color: white;
+		cursor: pointer;
+		&:hover {
+			background: white;
+			color: #337A5B;
+		}
+	}
+	form {
+		display: inline-flex;
+		flex-wrap: wrap;
+		justify-content: right;
+		@include media-breakpoint(max-1024) {
+			justify-content: center;
+		}
+	}
+	button {
+		background: transparent;
+    	border: none;
+		height: 46px;
+		padding: 0;
+		margin-left: 20px;
+	}
+	input {
+		box-sizing: border-box;
+		min-width: 60%;
+		height: 46px;
+		color: white;
+		font-size: 16px;
+		line-height: 150%;
+		padding-left: 25px;
+		background: rgba(217, 217, 217, 0.03);
+		border: 1px solid #FFFFFF;
+		backdrop-filter: blur(2.5px);
+		border-radius: 5px;
+		@media (max-width: 1142px) {
+			margin-bottom: 15px;
+		}
+		&::placeholder {
+			color: white;
+		}
+		@include media-breakpoint(max-1024) {
+			min-width: 50%;
+		}
+		@include media-breakpoint(max-567) {
+			min-width: 100%;
+		}
+	}
+}

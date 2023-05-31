@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Mahjong</title>
+
+		<link rel="stylesheet" type="text/css" href="build/css/all.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+		<script src="myscript.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="myjquery.js"></script>
+
+		<meta name="viewport" content="width=device-width">
+		<meta name="author" content="Leonidas Tsekouras">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1 id="title">麻将</h1>
+		<div class="orientation-warning">
+			<span id="close-warning">x</span>
+			<h4>For the best experience, please use Landscape view on mobile devices.</h4>
+		</div>
+
+		<div id="startscreenDiv">
+			<p class="start-help">Choose settings and press Begin to play!</p>
+			
+			<div id="textContainer" class="flex-settings">
+				<!-- Settings -->
+				<span class="range-label">Board size</span>
+				<input type="range" id="sizeSlider" min="2" max="4" style="width: 128px;" />
+				<span class="range-label">Difficulty</span>
+				<input type="range" id="difficultySlider" min="1" max="3" style="width: 128px;" />
+			</div>
+			<br /><input type="button" class="btn start-btn" style="margin-top: 26px;" value="Begin" onclick="startGame();" />
+			<span class="help-icon">?</span>
+		</div>
+
+		<div class="dim-background"></div>
+
+		<div class="div-help">
+			<span class="help-exit">x</span>
+			<h3>How to play</h3>
+			<p>Select matching tiles to remove them from the board.</p>
+			<img src="assets/matching-example.png" alt="" class="img-spacing-fix">
+			<img src="assets/removed-example.png" alt="" class="img-spacing-fix">
+			<p>Tiles must have a free space either to the <b>left</b> or the <b>right</b> to be played.</p>
+			<p>Playable tiles will change color when hovered or selected.</p>
+			<img src="assets/free-space-example.png" alt="" class="img-spacing-fix">
+			<p>You may shuffle with the button whenever you like, but it may only make it harder.</p>
+			<img src="assets/shuffle-example.png" alt="">
+			<p>A shuffle will occur automatically when no more matches remain on the board.</p>
+			<p>Try to remove all tiles before the time limit to win. Good luck!</p>
+		</div>
+
+		
+		<div id="divTable">
+			<div id="container">
+				<div id="bottomBar" class="bottomBarHidden">
+					<span id="nGButton"></span>
+					<div class="bar-stats">
+						<span id="correctMovesCounter"></span>
+						<span id="wrongMovesCounter"></span>
+						<span id="timeCounter"></span>
+					</div>
+					<input type="button" class="btn" value="Shuffle" onclick="shuffleBoard();" />
+				</div>
+			</div>
+		</div>
+
+		<span>
+			<img class="pause-btn" src="/assets/pause.png" alt="pause">
+		</span>
+
+		<span id="leCreatorName">By Leonidas Tsekouras & Naomi Keller</span>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+.nkp-hero {
+    position: relative;
+    background-image: linear-gradient( #000, $color-purple );
+    background-attachment: fixed;
+    @include media-breakpoint(max-576) {
+        top: 72px;
+    }
+    
+    .container {
+        min-height: 900px;
+        position: relative;
+        @include media-breakpoint(max-1199) {
+            background-color: $color-purple;
+        }
+        @include media-breakpoint(max-576) {
+            min-height: 360px;
+        }
+    }
+
+    .nkp-hero__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        h1 {
+            width: 750px;
+            pointer-events: none;
+        }
+        @include media-breakpoint(max-1199) {
+            position: static;
+            min-height: 900px;
+            h1 {
+                padding: 0 20px;
+            }
+        }
+        @include media-breakpoint(max-576) {
+            min-height: 361px;
+        }
+    }
+
+    .nkp-hero__block {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: $color-purple;
+        height: 100%;
+        width: 70%;
+        @include media-breakpoint(max-1199) {
+            display: none;
+        }
+    }
+
+}

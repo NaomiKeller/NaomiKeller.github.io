@@ -1,0 +1,14 @@
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 98;
+    box-shadow: 0 0 0 5000px inset rgba(0, 0, 0, .6);
+    transition: ease-in-out .2s opacity;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}

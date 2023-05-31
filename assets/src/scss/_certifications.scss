@@ -1,0 +1,52 @@
+.nkp-certifications {
+    background-color: #000;
+    h2, a {
+        margin-bottom: 24px;
+    }
+    a {
+        background-color: #000;
+    }
+    h2 {
+        width: 100%;
+    }
+    svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        opacity: .3;
+        padding-right: 20px;
+        z-index: 0;
+        transition: ease-in-out .3s;
+        @include media-breakpoint(max-1199) {
+            max-width: 350px;
+        }
+        @include media-breakpoint(max-991) {
+            opacity: 0;
+        }
+    }
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 600px;
+    }
+    .btn {
+        &.btn--pink {
+            border: 1px solid $color-pink;
+            &:hover {
+                background-color: $color-pink;
+            }
+        }
+        &.btn--green {
+            border: 1px solid $color-green;
+            &:hover {
+                background-color: $color-green;
+            }
+        }
+    }
+    .nkp-certifications__content {
+        width: 100%;
+        z-index: 20;
+    }
+}

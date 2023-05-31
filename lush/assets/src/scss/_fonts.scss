@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@keyframes underline {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+h1, h2, h3, h4, li, a, span, input {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 77px;
+	transition: ease-in-out .3s font-size;
+	@include media-breakpoint(max-991) {
+		font-size: 54px;
+	}
+	@include media-breakpoint(max-767) {
+		font-size: 44px;
+		line-height: 55px;
+	}
+}
+
+h2 {
+	color: #285A43;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 140%;
+	letter-spacing: 0.04em;
+	text-transform: capitalize;
+}
+
+h3 {
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 140%;
+	letter-spacing: 0.04em;
+	text-transform: capitalize;
+	color: #285A43;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	line-height: 150%;
+	color: #121212;
+	opacity: 0.8;
+	&.p-white {
+		opacity: 1;
+		line-height: 140%;
+		color: #F8F8F8;
+	}
+}
+
+a {
+	color: white;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	text-decoration: none;
+}

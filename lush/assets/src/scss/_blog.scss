@@ -1,0 +1,81 @@
+.blog {
+	margin-bottom: 120px;
+	h2 {
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	h3 {
+		margin-top: 16px;
+		margin-bottom: 20px;
+	}
+	p {
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.col-info {
+		display: flex;
+		justify-content: space-between;
+	}
+	a {
+		color: #285A43;
+		font-weight: 600;
+		margin-right: 24px;
+		font-size: 16px;
+		&:hover {
+			text-decoration: underline;
+		}
+		&::before {
+			content: '';
+			background: url('../../images/readmore-arrow-icon.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 24px;
+			width: 24px;
+			right: -30px;
+			position: absolute;
+			&:hover {
+				fill: #285A43;
+				text-decoration: underline;
+			}
+		}
+	}
+	span.date {
+		margin-left: 32px;
+		position: relative;
+		color: rgba(18, 18, 18, 0.8);
+		opacity: 0.8;
+		&::before {
+			content: '';
+			background: url('../../images/date-icon.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 24px;
+			width: 24px;
+			left: -32px;
+			position: absolute;
+		}
+	}
+	.flex {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 70px;
+		@include media-breakpoint(max-991) {
+			flex-wrap: wrap;
+		}
+		@include media-breakpoint(max-567) {
+			gap: 40px;
+		}
+	}
+	.col {
+		width: calc(33% - 20px);
+		@include media-breakpoint(max-991) {
+			width: calc(50% - 35px);
+		}
+		@include media-breakpoint(max-567) {
+			width: 100%;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}

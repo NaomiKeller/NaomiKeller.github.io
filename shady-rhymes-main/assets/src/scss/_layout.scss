@@ -1,0 +1,19 @@
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+body {
+	margin: 0;
+	z-index: -1;
+    position: relative;
+	overflow-x: hidden;
+}
+.container {
+	max-width: 1760px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 80px;
+	@media (max-width: 1024px) {
+		padding: 0 20px;
+	}
+}

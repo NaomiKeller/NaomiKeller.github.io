@@ -1,0 +1,25 @@
+.hero {
+	background: url('../../images/hero-img-1.png');
+	min-height: 758px;
+	text-align: center;
+	background-size: cover;
+    background-position: bottom;
+	display: flex;
+	align-items: center;
+	.container {
+		h1 {
+			color: white;
+		}
+		p {
+			max-width: 790px;
+			color: white;
+			margin: 15px auto 40px;
+		}
+		.flex {
+			justify-content: center;
+			gap: 15px;
+			align-items: center;
+		}
+	}
+
+}

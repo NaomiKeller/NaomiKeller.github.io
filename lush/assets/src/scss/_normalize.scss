@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+h2 {
+	text-transform: capitalize;
+}
+
+a {
+	position: relative;
+	&:not(.btn) {
+		&:hover {
+			&::after {
+				content: '';
+				height: 2px;
+				animation: underline .3s;
+				width: 100%;
+				background: #fff;
+				position: absolute;
+				left: 1px;
+				bottom: -3px;
+			}
+		}
+	}
+	&.btn {
+		border: 1px solid white;
+		border-radius: 3px;
+		padding: 11px 50px;
+		transition: ease-in-out .3s;
+		&:hover {
+			transition-property: background-color border-color;
+			border-color: #285A43;
+			background-color: #285A43;
+			border-radius: 3px;
+			padding: 11px 50px;
+		}
+		&.btn-green {
+			border: 1px solid #337A5B;
+			color: #337A5B;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}
