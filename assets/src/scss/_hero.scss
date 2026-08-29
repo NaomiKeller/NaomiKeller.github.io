@@ -1,6 +1,6 @@
 .nkp-hero {
     position: relative;
-    background-image: linear-gradient( #000, $color-purple );
+    background: radial-gradient(ellipse 900px 700px at 75% 30%, rgba(110, 79, 255, .18), transparent), linear-gradient( #000, $color-purple );
     background-attachment: fixed;
     @include media-breakpoint(max-576) {
         top: 72px;
@@ -19,7 +19,8 @@
 
     .nkp-hero__text {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         justify-content: center;
         position: absolute;
         right: 0;
@@ -32,12 +33,27 @@
         @include media-breakpoint(max-1199) {
             position: static;
             min-height: 900px;
+            align-items: flex-start;
             h1 {
+                width: 100%;
+                max-width: 750px;
                 padding: 0 20px;
+                box-sizing: border-box;
             }
         }
         @include media-breakpoint(max-576) {
             min-height: 361px;
+        }
+    }
+
+    .nkp-hero__tag {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 14px;
+        color: $color-orange;
+        letter-spacing: .02em;
+        margin-bottom: 20px;
+        @include media-breakpoint(max-1199) {
+            padding: 0 20px;
         }
     }
 

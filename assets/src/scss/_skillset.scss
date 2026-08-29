@@ -7,17 +7,21 @@
         margin-bottom: 24px;
     }
     h3 {
-        margin: 24px 0 12px;
+        margin: 20px 0 12px;
     }
     p {
         color: $color-light-grey;
     }
     img {
-        width: 32px;
-        height: 32px;
+        width: 18px;
+        height: 18px;
         object-fit: cover;
         display: block;
         filter: invert(20%) sepia(87%) saturate(5748%) hue-rotate(255deg) brightness(87%) contrast(108%);
+    }
+    .nkp-skillset__ai-icon {
+        color: $color-blue;
+        display: block;
     }
     .nkp-skillset__wrap {
         display: flex;
@@ -42,7 +46,7 @@
         .nkp-skillset__grid {
             width: calc(66.6666% - 36px);
             display: flex;
-            gap: 48px 72px;
+            gap: 40px 72px;
             flex-wrap: wrap;
             @include media-breakpoint(max-767) {
                 width: 100%;
@@ -50,12 +54,27 @@
         }
         .nkp-skillset__grid-item {
             width: calc(50% - 36px);
+            padding: 28px 24px;
+            border: 1px solid $color-border;
+            transition: ease-in-out .25s border-color, ease-in-out .25s transform;
+            &:hover {
+                border-color: $color-blue;
+                transform: translateY(-2px);
+            }
             @include media-breakpoint(max-991) {
                 width: 100%;
             }
             .image-wrap {
                 display: flex;
-                gap: 7px;
+                gap: 8px;
+                img {
+                    background-color: rgba(243, 242, 247, .06);
+                    border: 1px solid $color-border;
+                    padding: 9px;
+                    width: 36px;
+                    height: 36px;
+                    box-sizing: border-box;
+                }
             }
         }
     }

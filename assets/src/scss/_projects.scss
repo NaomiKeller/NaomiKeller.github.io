@@ -12,13 +12,15 @@
         &:not(:first-child) {
             padding: 40px 32px;
             background-color: $color-purple;
+            border: 1px solid $color-border;
             cursor: pointer;
-            transition: ease-in-out .3s background-color;
+            transition: ease-in-out .25s border-color, ease-in-out .25s transform;
             &:hover {
-                background-color: $color-blue;
+                border-color: $color-orange;
+                transform: translateY(-3px);
                 .text--grey {
                     transition: ease-in-out .3s opacity;
-                    opacity: 1;
+                    opacity: .8;
                 }
             }
         }
