@@ -565,12 +565,6 @@ body {
   display: flex;
   gap: 8px;
 }
-.nkp-skillset .nkp-skillset__wrap .nkp-skillset__grid-item .image-wrap img {
-  padding: 9px;
-  width: 36px;
-  height: 36px;
-  box-sizing: border-box;
-}
 
 .nkp-certifications {
   background-color: #000;
