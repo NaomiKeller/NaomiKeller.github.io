@@ -1,12 +1,14 @@
 {
   "name": "naomi-k-portfolio",
   "version": "0.1.0",
-  "devDependencies": {
-    "grunt": "^1.5.3",
-    "grunt-contrib-sass": "^2.0.0",
-    "grunt-contrib-watch": "^1.1.0"
+  "scripts": {
+    "build:css": "sass src/scss/all.scss:build/css/all.css --style=expanded",
+    "build:js": "uglifyjs src/js/script.js -o build/js/script.js -c -m",
+    "build": "npm run build:css && npm run build:js",
+    "watch:css": "sass src/scss/all.scss:build/css/all.css --style=expanded --watch"
   },
-  "dependencies": {
-    "grunt-contrib-uglify": "^5.2.2"
+  "devDependencies": {
+    "sass": "1.57.1",
+    "uglify-js": "^3.17.4"
   }
 }
