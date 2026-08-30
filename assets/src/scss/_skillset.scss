@@ -17,10 +17,10 @@
         height: 18px;
         object-fit: cover;
         display: block;
-        filter: invert(20%) sepia(87%) saturate(5748%) hue-rotate(255deg) brightness(87%) contrast(108%);
+        filter: invert(29%) sepia(60%) saturate(688%) hue-rotate(-149deg) brightness(154%) contrast(101%);
     }
     .nkp-skillset__ai-icon {
-        color: $color-blue;
+        color: $color-accent;
         display: block;
     }
     .nkp-skillset__wrap {
@@ -58,7 +58,7 @@
             border: 1px solid $color-border;
             transition: ease-in-out .25s border-color, ease-in-out .25s transform;
             &:hover {
-                border-color: $color-blue;
+                border-color: $color-accent;
                 transform: translateY(-2px);
             }
             @include media-breakpoint(max-991) {
@@ -68,8 +68,6 @@
                 display: flex;
                 gap: 8px;
                 img {
-                    background-color: rgba(243, 242, 247, .06);
-                    border: 1px solid $color-border;
                     padding: 9px;
                     width: 36px;
                     height: 36px;

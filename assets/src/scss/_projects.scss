@@ -16,7 +16,7 @@
             cursor: pointer;
             transition: ease-in-out .25s border-color, ease-in-out .25s transform;
             &:hover {
-                border-color: $color-orange;
+                border-color: $color-accent;
                 transform: translateY(-3px);
                 .text--grey {
                     transition: ease-in-out .3s opacity;

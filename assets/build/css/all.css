@@ -74,11 +74,11 @@ p.label {
   opacity: 0.55;
 }
 
-.text--orange {
+.text--accent {
   color: #ff5a38;
   text-decoration: none;
 }
-.text--orange:hover {
+.text--accent:hover {
   text-decoration: underline;
 }
 
@@ -499,10 +499,10 @@ body {
   height: 18px;
   object-fit: cover;
   display: block;
-  filter: invert(20%) sepia(87%) saturate(5748%) hue-rotate(255deg) brightness(87%) contrast(108%);
+  filter: invert(29%) sepia(60%) saturate(688%) hue-rotate(-149deg) brightness(154%) contrast(101%);
 }
 .nkp-skillset .nkp-skillset__ai-icon {
-  color: #6e4fff;
+  color: #8c6fff;
   display: block;
 }
 .nkp-skillset .nkp-skillset__wrap {
@@ -546,7 +546,7 @@ body {
   transition: ease-in-out 0.25s border-color, ease-in-out 0.25s transform;
 }
 .nkp-skillset .nkp-skillset__wrap .nkp-skillset__grid-item:hover {
-  border-color: #6e4fff;
+  border-color: #8c6fff;
   transform: translateY(-2px);
 }
 @media (max-width: 991px) {
@@ -559,8 +559,6 @@ body {
   gap: 8px;
 }
 .nkp-skillset .nkp-skillset__wrap .nkp-skillset__grid-item .image-wrap img {
-  background-color: rgba(243, 242, 247, 0.06);
-  border: 1px solid rgba(243, 242, 247, 0.1);
   padding: 9px;
   width: 36px;
   height: 36px;
@@ -643,7 +641,7 @@ body {
   transition: ease-in-out 0.25s border-color, ease-in-out 0.25s transform;
 }
 .nkp-projects .nkp-projects__item:not(:first-child):hover {
-  border-color: #ff5a38;
+  border-color: #8c6fff;
   transform: translateY(-3px);
 }
 .nkp-projects .nkp-projects__item:not(:first-child):hover .text--grey {
@@ -748,5 +746,7 @@ body {
   transition: ease-in-out 0.3s color;
 }
 .nkp-footer .nkp-footer__line a:hover {
-  color: #ff5a38;
+  color: #8c6fff;
 }
+
+/*# sourceMappingURL=all.css.map */
