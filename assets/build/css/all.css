@@ -259,15 +259,22 @@ body {
   transition: ease-in-out 0.4s;
 }
 .nkp-nav .nkp-nav__hamburger a {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   width: 100%;
-  padding: 32px 0;
+  padding: 24px 24px;
   border-bottom: 1px solid #8791A3;
   transition: ease-in-out 0.3s background-color;
   cursor: pointer;
 }
 .nkp-nav .nkp-nav__hamburger a:hover {
   background-color: #6e4fff;
+}
+.nkp-nav .nkp-nav__hamburger .nkp-nav__hamburger-num {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  color: #ff5a38;
 }
 .nkp-nav .nkp-nav__hamburger li:first-child a {
   border-top: 1px solid #8791A3;

@@ -97,15 +97,22 @@
         text-align: center;
         transition: ease-in-out .4s;
         a {
-            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
             width: 100%;
-            padding: 32px 0;
+            padding: 24px 24px;
             border-bottom: 1px solid $color-light-grey;
             transition: ease-in-out .3s background-color;
             cursor: pointer;
             &:hover {
                 background-color: $color-blue;
             }
+        }
+        .nkp-nav__hamburger-num {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 13px;
+            color: $color-orange;
         }
         li:first-child {
             a {
